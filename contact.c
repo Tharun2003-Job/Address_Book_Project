@@ -137,7 +137,7 @@ int validate_phonenum(char phonenum[], AddressBook *addressBook)
 {
     int len = strlen(phonenum); // Get length
 
-    if (len < 10) // Minimum length check
+    if (len != 10) // Minimum length check
     {
         return 0;
     }
